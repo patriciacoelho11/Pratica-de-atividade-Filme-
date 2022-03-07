@@ -1,0 +1,11 @@
+<h2>Filme</h2>
+<Table>
+  <tr>
+  <th>Titulo</th>
+  <th>Note</th>
+  </tr>
+<tr *ngfor="let movie of movies ">
+  <td>{{movie.title}}</td>
+  <td><app-rating></app-rating>{{movie.rating}}</td>
+</tr>
+</Table>
